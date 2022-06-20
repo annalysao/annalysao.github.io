@@ -12,53 +12,54 @@ body {
     background-color: darkslategray;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 10px;
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    align-items: center;
+    justify-items: center;
 }
 
 div {
-    text-size-adjust: auto;
+    text-size-adjust: none;
+    font-family: 'Monoton', cursive;
     text-align: center;
-    align-items: stretch;
-    background-color: rgb(55, 92, 92);
-    font-family: 'Arapey', serif;
+    background-color: darkcyan;
+    
 }
 
-.name {
-    grid-column: 1 / 11;
+.img {
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+    width: 85%;
+    border-radius: 60%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    background-color: darkslategray;
 }
 
-.photo {
-    grid-column: 1 / 4;
-    grid-row: 2 / 4;
-}
-
-.contact {
-    grid-column: 1 / 4;
-    grid-row: 4 / 4;
-    padding: 5px;
+.email {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 70%;
+    
 }
 
 .GitHub {
-    grid-column: 1 / 4;
-    grid-row: 5 / 5;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 70%;
 }
 
 .linkedin {
-    grid-column: 1 / 4;
-    grid-row: 6 / 6;
-}
-
-.bio {
-    grid-column: 1 / 11;
-    grid-row: 7 / 10;
-}
-
-.video {
-    grid-column: 4 / 11;
-    grid-row: 2 / 7;
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 70%;
 }
